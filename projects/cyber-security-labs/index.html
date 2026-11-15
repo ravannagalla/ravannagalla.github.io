@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Security Labs | Ravan Nagalla</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f3f3f1;
+        color: #17191c;
+      }
+      .page-shell {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 14px 18px;
+        background: rgba(255,255,255,0.7);
+        border: 1px solid rgba(17,24,39,0.1);
+        border-radius: 18px;
+        margin-bottom: 32px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+      }
+      .brand-mark {
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #1d2126, #70767d);
+        color: white;
+        display: grid;
+        place-items: center;
+      }
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #5f6773;
+      }
+      .card {
+        background: rgba(255,255,255,0.8);
+        border: 1px solid rgba(17,24,39,0.1);
+        border-radius: 24px;
+        padding: 24px;
+        box-shadow: 0 16px 40px rgba(20,22,26,0.08);
+      }
+      h1 {
+        font-size: clamp(2.2rem, 4vw, 3.5rem);
+        margin: 0 0 18px;
+      }
+      p {
+        color: #5f6773;
+        line-height: 1.7;
+      }
+      .lab-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+      .lab {
+        padding: 18px;
+        border: 1px solid rgba(17,24,39,0.1);
+        border-radius: 18px;
+        background: #fff;
+      }
+      .lab h3 {
+        margin-top: 0;
+      }
+      .tag {
+        display: inline-block;
+        padding: 7px 12px;
+        border-radius: 999px;
+        background: rgba(17,24,39,0.03);
+        border: 1px solid rgba(17,24,39,0.08);
+        color: #2f3338;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">RN</span>
+          <span>RAVAN NAGALLA</span>
+        </div>
+        <nav class="nav-links" aria-label="Secondary navigation">
+          <a href="../../index.html">Home</a>
+          <a href="../../Learning/cybersecurity/index.html">Learning</a>
+          <a href="../../projects/personal-finance-app/index.html">Finance App</a>
+        </nav>
+      </header>
+
+      <main class="card">
+        <div class="tag">Hands-on Labs</div>
+        <h1>Cyber Security Labs</h1>
+        <p>
+          Practical lab concepts that reinforce identity security, threat detection, secure architecture, and cloud security hardening.
+        </p>
+
+        <div class="lab-grid">
+          <div class="lab">
+            <h3>IAM Lab</h3>
+            <p>Configure OAuth/OIDC flows, SSO, federation, and access policy enforcement.</p>
+          </div>
+          <div class="lab">
+            <h3>Zero Trust Lab</h3>
+            <p>Segment networks, validate device trust, and apply least-privilege access controls.</p>
+          </div>
+          <div class="lab">
+            <h3>Azure Security Lab</h3>
+            <p>Deploy secure Azure resources with Key Vault, RBAC, Defender, and monitoring.</p>
+          </div>
+          <div class="lab">
+            <h3>API Security Lab</h3>
+            <p>Assess token validation, rate limiting, secrets handling, and secure integration patterns.</p>
+          </div>
+          <div class="lab">
+            <h3>Threat Modeling Lab</h3>
+            <p>Map attack surfaces and prioritize mitigation across identity, apps, and infra.</p>
+          </div>
+          <div class="lab">
+            <h3>Incident Response Lab</h3>
+            <p>Simulate alert triage, evidence review, and response playbooks for critical events.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

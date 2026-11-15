@@ -297,6 +297,68 @@ h1 {
   font-size: 0.82rem;
 }
 
+.content-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 0.8fr);
+  gap: 24px;
+  align-items: start;
+  margin-top: 54px;
+}
+
+.main-column {
+  min-width: 0;
+}
+
+.sidebar {
+  display: grid;
+  gap: 20px;
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar-card {
+  padding: 22px 20px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow);
+}
+
+.sidebar-title {
+  margin: 0 0 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary-strong);
+}
+
+.sidebar-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.sidebar-link,
+.blog-list a {
+  color: var(--primary-strong);
+  text-decoration: none;
+}
+
+.sidebar-link:hover,
+.blog-list a:hover {
+  text-decoration: underline;
+}
+
+.blog-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.blog-list li + li {
+  margin-top: 10px;
+}
+
 section {
   margin-top: 54px;
 }
@@ -455,8 +517,13 @@ footer {
 
 @media (max-width: 860px) {
   .hero-content,
+  .content-layout,
   .capabilities {
     grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
   }
 
   .topbar {

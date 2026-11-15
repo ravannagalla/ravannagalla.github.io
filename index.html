@@ -22,6 +22,9 @@
             <a href="#profile">Profile</a>
             <a href="#timeline">Career Timeline</a>
             <a href="#expertise">Expertise</a>
+            <a href="Learning/cybersecurity/index.html">Learning</a>
+            <a href="projects/cyber-security-labs/index.html">Cyber Labs</a>
+            <a href="projects/personal-finance-app/index.html">Finance App</a>
             <a href="https://www.linkedin.com/in/ravan-nagalla-9a0b9524/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </nav>
@@ -93,24 +96,25 @@
         </div>
       </header>
 
-      <main>
-        <section aria-labelledby="summary-heading">
-          <div class="section-header">
-            <h2 id="summary-heading">Professional Summary</h2>
-          </div>
-          <div class="summary-card">
-            <p>
-              I help organizations secure digital trust by architecting identity-first systems that are
-              resilient, scalable, and aligned with enterprise security governance. My experience spans
-              building IAM applications as microservices, integrating identity platforms across complex
-              ecosystems, and operating within Azure Kubernetes environments using modern DevSecOps and
-              engineering practices. I bring a practical, business-aware approach to cybersecurity, with
-              a focus on security, performance, and operational excellence.
-            </p>
-          </div>
-        </section>
+      <main class="content-layout">
+        <div class="main-column">
+          <section aria-labelledby="summary-heading">
+            <div class="section-header">
+              <h2 id="summary-heading">Professional Summary</h2>
+            </div>
+            <div class="summary-card">
+              <p>
+                I help organizations secure digital trust by architecting identity-first systems that are
+                resilient, scalable, and aligned with enterprise security governance. My experience spans
+                building IAM applications as microservices, integrating identity platforms across complex
+                ecosystems, and operating within Azure Kubernetes environments using modern DevSecOps and
+                engineering practices. I bring a practical, business-aware approach to cybersecurity, with
+                a focus on security, performance, and operational excellence.
+              </p>
+            </div>
+          </section>
 
-        <section id="timeline" aria-labelledby="timeline-heading">
+          <section id="timeline" aria-labelledby="timeline-heading">
           <div class="section-header">
             <h2 id="timeline-heading">Career Timeline</h2>
             <p>Career progression from most recent to earlier roles.</p>
@@ -195,31 +199,50 @@
           </div>
         </section>
 
-        <section id="expertise" aria-labelledby="expertise-heading">
-          <div class="section-header">
-            <h2 id="expertise-heading">Core Expertise</h2>
-          </div>
-          <div class="capabilities">
-            <div class="capability-card">
-              <h3>IAM & Cybersecurity</h3>
-              <ul>
-                <li>Ping Identity product implementation and integration</li>
-                <li>Authentication and authorization design</li>
-                <li>Enterprise identity governance and access controls</li>
-                <li>Security-first application architecture</li>
-              </ul>
+          <section id="expertise" aria-labelledby="expertise-heading">
+            <div class="section-header">
+              <h2 id="expertise-heading">Core Expertise</h2>
             </div>
-            <div class="capability-card">
-              <h3>Platform Engineering</h3>
-              <ul>
-                <li>Microservices-based application design</li>
-                <li>Azure Kubernetes deployment patterns</li>
-                <li>Scalable enterprise integration architecture</li>
-                <li>Operational resilience and security automation</li>
-              </ul>
+            <div class="capabilities">
+              <div class="capability-card">
+                <h3>IAM & Cybersecurity</h3>
+                <ul>
+                  <li>Ping Identity product implementation and integration</li>
+                  <li>Authentication and authorization design</li>
+                  <li>Enterprise identity governance and access controls</li>
+                  <li>Security-first application architecture</li>
+                </ul>
+              </div>
+              <div class="capability-card">
+                <h3>Platform Engineering</h3>
+                <ul>
+                  <li>Microservices-based application design</li>
+                  <li>Azure Kubernetes deployment patterns</li>
+                  <li>Scalable enterprise integration architecture</li>
+                  <li>Operational resilience and security automation</li>
+                </ul>
+              </div>
             </div>
+          </section>
+        </div>
+
+        <aside class="sidebar" aria-label="Engineering blog and code links">
+          <div class="sidebar-card">
+            <div class="sidebar-title">GitHub</div>
+            <p>Code, experiments, and engineering notes.</p>
+            <a class="sidebar-link" href="https://github.com/ravannagalla" target="_blank" rel="noreferrer">github.com/ravannagalla</a>
           </div>
-        </section>
+
+          <div class="sidebar-card">
+            <div class="sidebar-title">Engineering Blog</div>
+            <ul class="blog-list">
+              <li><a href="#">Designing secure IAM patterns in distributed systems</a></li>
+              <li><a href="#">Azure Kubernetes for enterprise identity services</a></li>
+              <li><a href="#">Microservices best practices for resilient APIs</a></li>
+              <li><a href="#">Why zero-trust design matters in fintech</a></li>
+            </ul>
+          </div>
+        </aside>
       </main>
 
       <footer>© 2026 Ravan Nagalla | Cybersecurity IAM Portfolio</footer>
